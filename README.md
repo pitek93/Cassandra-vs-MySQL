@@ -1,2 +1,2 @@
 # Cassandra-vs-MySQL
-Comparing scalability of two databases with queries to IDMB (movies database)
+Comparing scalability of two databases, querying IDMB (movies database)
