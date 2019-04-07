@@ -1,0 +1,14 @@
+
+
+-----CREATE DATABASE filmy_oceny
+-----USE filmy_oceny
+-----CREATE TABLE movies (movieId INT NOT NULL, title VARCHAR(255) NOT NULL, genres VARCHAR(255) NOT NULL, PRIMARY KEY (movieId));
+-----CREATE TABLE ratings (movieId INT NOT NULL, rating VARCHAR(255) NOT NULL, FOREIGN KEY (movieId) REFERENCES movies(movieId));
+-----SET NAMES 'utf8';
+-----SET CHARACTER SET utf8;
+
+
+-----LOAD DATA LOCAL INFILE '/home/piotr/Desktop/BDII/projekt/movies.csv'  INTO TABLE movies  FIELDS TERMINATED BY ','  ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 1 ROWS;
+-----LOAD DATA LOCAL INFILE '/home/piotr/Desktop/BDII/projekt/5msql.csv'  INTO TABLE ratings  FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' IGNORE 1 ROWS;
+
+

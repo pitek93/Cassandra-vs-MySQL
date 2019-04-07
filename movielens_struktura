@@ -1,0 +1,21 @@
+genome-scores.csv
+	movieId, tagId, relevance
+
+
+genome-tags.csv
+	tagId, tag
+
+
+links.csv
+	movieId, imdbId, tmdbId
+
+
+tags.csv
+	userId, movieId, tag, timestamp
+
+
+movies.csv
+	movieId, title, genres
+
+ratings.csv
+	movieId, rating
